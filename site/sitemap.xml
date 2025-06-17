@@ -5,6 +5,10 @@
          <lastmod>2025-06-17</lastmod>
     </url>
     <url>
+         <loc>http://localhost:8000/announcement/</loc>
+         <lastmod>2025-06-17</lastmod>
+    </url>
+    <url>
          <loc>http://localhost:8000/character_att/</loc>
          <lastmod>2025-06-17</lastmod>
     </url>
