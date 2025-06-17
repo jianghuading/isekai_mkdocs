@@ -99,7 +99,7 @@ hello_world()
 
 ### 即时预览
 
-[查看](about.md#安装指南){ data-preview }
+[查看](id_list.md#常用-id){ data-preview }
 
 ### 注释
 

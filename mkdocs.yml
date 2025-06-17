@@ -103,7 +103,9 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 系统:
+  - 公告:
+      - 更新计划: announcement.md
+  - 系统设计:
       - 设计草案: design_draft.md
       - 人物属性: character_att.md
   - 数据结构:

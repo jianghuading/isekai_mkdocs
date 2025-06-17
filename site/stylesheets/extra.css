@@ -42,3 +42,50 @@
 .md-nav__item .md-nav__link {
   font-size: 85%;
 }
+
+/* 专门针对导航栏文字不换行 */
+.md-nav__item .md-nav__link {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* 为主要章节标题（带#图标的）添加上边距 */
+.md-nav__item--section > .md-nav__link {
+  margin-top: 14px !important;
+  padding-top: 5px !important;
+  font-weight: 600 !important;
+}
+
+/* 第一个章节不需要上边距 */
+.md-nav__item--section:first-child > .md-nav__link {
+  margin-top: 0 !important;
+}
+
+/* 增加子项目的缩进和间距 */
+.md-nav__item .md-nav__item {
+  margin-left: 5px !important;
+}
+
+/* 调整二级标题的样式 */
+.md-nav__item .md-nav__item > .md-nav__link {
+  padding: 3px 0 !important;
+  font-size: 0.9em !important;
+}
+
+/* 三级标题的样式 */
+.md-nav__item .md-nav__item .md-nav__item > .md-nav__link {
+  padding: 2px 0 !important;
+  font-size: 0.85em !important;
+  margin-left: 5px !important;
+}
+
+/* 整体导航区域的样式优化 */
+.md-nav {
+  line-height: 1.1 !important;
+}
+
+/* 鼠标悬停效果 */
+.md-nav__link:hover {
+  border-radius: 5px !important;
+}
