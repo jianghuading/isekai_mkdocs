@@ -1,0 +1,44 @@
+/* 中文字体大小调整 */
+.md-typeset {
+  font-size: 0.65rem; /* 调整基础字体大小 */
+  line-height: 1.4;
+}
+
+/* 标题字体大小调整 */
+.md-typeset h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.md-typeset h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.md-typeset h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.md-typeset h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* 中文字体优化 */
+.md-typeset {
+  font-family: "PingFang SC", /* macOS 中文字体 */ "Microsoft YaHei",
+    /* Windows 中文字体 */ "Source Han Sans SC",
+    /* 开源中文字体 */ "Noto Sans CJK SC", /* Google 中文字体 */ -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 代码字体保持原样 */
+.md-typeset code {
+  font-size: 0.85em;
+}
+
+/* 如果需要同时调整主导航和子导航 */
+.md-nav__item .md-nav__link {
+  font-size: 85%;
+}

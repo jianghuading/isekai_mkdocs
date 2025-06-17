@@ -1,0 +1,86 @@
+# 站点基本信息
+site_name: 我的文档
+site_description: 基于MkDocs构建的文档站点
+site_author: 作者名称
+site_url: http://localhost:8000
+
+# 主题配置
+theme:
+  name: material
+  language: zh # 中文界面
+  features:
+    - navigation.tabs # 顶部导航
+    - navigation.top # 返回顶部
+    - search.highlight # 搜索高亮
+    - content.code.copy # 代码复制按钮
+    - navigation.instant # 即时预览（不是即时搜索）
+    - navigation.instant.preview # 即时预览
+    - content.tooltips # 工具提示
+  font:
+    text: PingFang SC # 使用系统中文字体，而不是 Noto Sans SC
+    code: JetBrains Mono
+  icon:
+    admonition:
+      note: octicons/tag-16 # 笔记/注释
+      abstract: octicons/checklist-16 # 摘要/总结
+      info: octicons/info-16 # 信息/说明
+      tip: octicons/squirrel-16 # 小贴士/技巧
+      success: octicons/check-16 # 成功/完成
+      question: octicons/question-16 # 问题/疑问
+      warning: octicons/alert-16 # 警告/注意
+      failure: octicons/x-circle-16 # 失败/错误
+      danger: octicons/zap-16 # 危险/严重
+      bug: octicons/bug-16 # 缺陷/漏洞
+      example: octicons/beaker-16 # 示例/演示
+      quote: octicons/quote-16 # 引用/引述
+      annotation: material/arrow-right-circle # 注解/批注
+
+# 站点配置
+extra_css:
+  - stylesheets/extra.css
+
+# 插件配置
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+# Markdown扩展
+markdown_extensions:
+  - abbr # 支持缩写
+  - pymdownx.snippets # 支持代码片段
+  - attr_list # 支持Markdown属性列表
+  - md_in_html # 支持在Markdown中使用HTML标签
+  - pymdownx.superfences # 支持代码块
+  - admonition # 提示框
+  - attr_list # 属性列表
+  - pymdownx.details
+  - toc: # 目录
+      permalink: true
+      title: 目录
+  - tables # 表格
+  - pymdownx.highlight: # 代码高亮
+      anchor_linenums: true
+  - pymdownx.superfences # 代码块
+  - pymdownx.tabbed: # 标签页
+      alternate_style: true
+  - pymdownx.tasklist: # 任务列表
+      custom_checkbox: true
+  - pymdownx.emoji: # emoji表情
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # 导航结构
+
+
+  - pymdownx.superfences: # Mermaid支持
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - 首页: index.md
+  - 系统:
+      - 战斗相关:
+          - 技能设定: 1.md
+      - 测试2: about2.md
