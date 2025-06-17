@@ -71,14 +71,12 @@
 .md-nav__item .md-nav__item > .md-nav__link {
   padding: 3px 0 !important;
   font-size: 0.9em !important;
-  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 /* 三级标题的样式 */
 .md-nav__item .md-nav__item .md-nav__item > .md-nav__link {
   padding: 2px 0 !important;
   font-size: 0.85em !important;
-  color: rgba(0, 0, 0, 0.6) !important;
   margin-left: 5px !important;
 }
 
@@ -89,6 +87,5 @@
 
 /* 鼠标悬停效果 */
 .md-nav__link:hover {
-  background-color: rgba(0, 0, 0, 0.05) !important;
   border-radius: 5px !important;
 }

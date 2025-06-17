@@ -35,6 +35,29 @@ theme:
       quote: octicons/quote-16 # 引用/引述
       annotation: material/arrow-right-circle # 注解/批注
 
+  palette:
+    # 默认调色板
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # 调色板切换
+    - media: "(prefers-color-scheme: light)"
+      primary: indigo
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # 深色调色板
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
 # 站点配置
 extra_css:
   - stylesheets/extra.css
