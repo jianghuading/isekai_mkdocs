@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 数据结构
+## 📊 数据结构
 
-### 效果配置表 (skill_effect_config)
+### ⭐️ 效果配置表 (skill_effect_config)
 
 这是技能系统的基础层，定义所有可能的技能效果。
 
@@ -83,7 +83,7 @@ enum SkillEffect {
 
 ---
 
-### 技能原型表 (skill_prototype_config)
+### ⭐️ 技能原型表 (skill_prototype_config)
 
 技能原型的配置表，通过 `effect_ids` 字段索引效果配置。
 
@@ -147,7 +147,7 @@ enum TargetType {
 
 ---
 
-### 技能列表 (skill_list)
+### ⭐️ 技能列表 (skill_list)
 
 完整技能的配置表，这是玩家和 NPC 实际使用的技能。
 

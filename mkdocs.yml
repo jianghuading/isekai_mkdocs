@@ -81,6 +81,9 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 系统:
-      - 战斗相关:
-          - 技能设定: 1.md
-      - 测试2: about2.md
+      - 设计草案: design_draft.md
+      - 人物属性: character_att.md
+  - 数据结构:
+      - 技能设定: skill_setting.md
+  - 参考:
+      - 常用ID: id_list.md
